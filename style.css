@@ -1,5 +1,6 @@
 html, body{
     background-color: rgb(0,0,0) !important;
+    overflow-x: hidden;
 }
 .home{
     /* #00000000 */
@@ -253,9 +254,10 @@ html, body{
 
 /*/////////////////////////////////////////////////////////*/
 .imgS{
-    display: none;
+    display: flex;
     padding: 3vh 6vw 1vh 7vw;
-    transition: 0.5s slider ease;
+    transition: opacityS 0.8 ease;
+
 }
 
 .img1{
@@ -335,6 +337,7 @@ html, body{
 .imgS2{
     display: none;
     padding: 3vh 6vw 1vh 7vw;
+    transition: opacityS 0.8 ease;
     /* transition: 0.5s slider ease; */
 }
 
@@ -354,52 +357,59 @@ html, body{
 
 /* ///////////////////////// */
 
-/* INPUT STUFF */
-input{
-   display: none;
-}
-
-#i1:checked~#one,
-#i2:checked~#two{
-    display: flex;
-}
 
 
 /* /////////////// */
 
 
-@keyframes slider{
-    from{
-        opacity: 1;
-        transform: translateX(0px);
-    }
-    to{
-        opacity: 0;
-        transform: translateX(-2000px);
-    }
-}
-
-@keyframes slider2{
-    from{
-        opacity: 0;
-        transform: translateX(100px);
-    }
-    to{
-        opacity: 1;
-        transform: translateX(0px);
-        
-    }
-}
-
 @keyframes opacityS{
     from{
       opacity: 0;
+      
     }
     to{
       opacity: 1;
     }
 }
 
+@keyframes opacityS1{
+    from{
+      opacity: 0;
+      transform: translateX(100px);
+      
+    }
+    to{
+      opacity: 1;
+      transform: translateX(0px);
+    }
+}
+
+
+@keyframes opacityS2{
+    from{
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+    to{
+      opacity: 1;
+      transform: translateX(0px);
+    }
+}
+
+
 .opacity{
-    animation: opacityS 0.8s ease;
+    animation: opacityS 1s ease;
+}
+
+
+.opacity1{
+    animation: opacityS1 1s ease;
+}
+
+.opacity2{
+    animation: opacityS2 1s ease;
+}
+
+.current{
+    display: block;
 }

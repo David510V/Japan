@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta name="description" content="Japan, History Culture and pleasure.">
+    <meta name="author" content="Vinter">
     <title>Japan- Visit Japan</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
@@ -16,7 +17,7 @@
 
     </head>
   <body>
-    <div class="home" style="text-align: center;" id="home">
+    <div class="home" style="text-align: center;" id="home" role="img" aria-label="Japan Art Museum History">
         
         <div class="navr">
 
@@ -107,15 +108,9 @@
        <p class="title">FAVORITE SPOTS</p>
     </div>
 
-
-    
-    <input type="radio" id="i1" name="images" checked/>
-    <input type="radio" id="i2" name="images" />
-
-
     <div class="imgS" id="one">
       <div class="img1">
-        <div class="txt" onmouseover="showTxt()">
+        <div class="txt" onmouseover="showTxt()" role="img" aria-label="Japan SUSHI Museum History">
           <p>SUSHI</p>
         <p class="small">Greate about food and stuff</p>
         </div>
@@ -126,7 +121,7 @@
       </div>
 
       <div class="img1 img2">
-        <div class="txt">
+        <div class="txt" role="img" aria-label="Japan FUJI Museum History">
           <p>FUJI</p>
         <p class="small">the powerful and thankfull moantian </p>
         </div>
@@ -137,7 +132,7 @@
       </div>
 
       <div class="img1 img3">
-        <div class="txt">
+        <div class="txt" role="img" aria-label="Japan TEXT Museum History">
           <p>TEXT</p>
         <p class="small">smalltext</p>
         </div>
@@ -148,7 +143,7 @@
       </div>
 
       <div class="img1 img4">
-        <div class="txt">
+        <div class="txt" role="img" aria-label="Japan TEXT Museum History">
           <p>TEXT</p>
         <p class="small">smalltext</p>
         </div>
@@ -210,8 +205,8 @@
 
 
     <div class="changers" style="text-align: center;">
-      <label id="labl1" onclick="export1()" class="btn btn-primary"><-</label>
-      <label id="labl2" onclick="export2()" class="btn btn-primary">-></label>
+      <button id="labl1" onclick="changeSlide()"  class="btn btn-primary"><-</button>
+      <button id="labl2" onclick="changeSlide2()" class="btn btn-primary">-></button>
     </div>
     
 

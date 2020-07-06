@@ -1,18 +1,3 @@
-var track=true
-function changeA(){
-    
-    if(track){
-        document.getElementById("home").style.backgroundImage='url(Untitled.jpg)'
-        track=false
-    }
-    else{
-        console.log("sss")
-        document.getElementById("home").style.backgroundImage='url(japan.jpg)'
-        track=true
-    }
-    
-}
-
 
 function infoChange(num){
     var home=document.querySelector('.home')
@@ -69,19 +54,48 @@ function itemClicked(num) {
     item.className += ' selected';
  }
 
-function export1(){
+// function export1(){
     
-    document.querySelector('.imgS').style.animation="0.8s slider ease"
-    // document.querySelector('.imgS2').style.animation="0.8s slider2 ease"
-    setTimeout(()=>{
-        document.getElementById('labl1').htmlFor="i1"
-    },1500)
+//     document.querySelector('.imgS').style.animation="0.8s slider ease"
+//     // document.querySelector('.imgS2').style.animation="0.8s slider2 ease"
+//     setTimeout(()=>{
+//         document.getElementById('labl1').htmlFor="i1"
+//     },1500)
+// }
+
+// function export2(){
+//     document.querySelector('.imgS').style.animation="1.2s slider2 ease"
+//     document.querySelector('.imgS2').style.animation="1.2s slider ease"
+//     setTimeout(()=>{
+//         document.getElementById('labl2').htmlFor="i2"
+//     },1500)
+// }
+
+var imgS=document.querySelector('.imgS')
+var imgS2=document.querySelector('.imgS2')
+var lbl1=document.getElementById('labl1')
+var lbl2=document.getElementById('labl2')
+lbl1.addEventListener('click',function(e){
+   
+}, false)
+
+function changeSlide(e){
+    imgS.style.display="none";
+
+    imgS2.classList.remove("opacity1")
+    void imgS2.offsetWidth
+    imgS2.classList.add("opacity1");
+    
+    imgS2.style.display="flex";
 }
 
-function export2(){
-    document.querySelector('.imgS').style.animation="1.2s slider2 ease"
-    document.querySelector('.imgS2').style.animation="1.2s slider ease"
-    setTimeout(()=>{
-        document.getElementById('labl2').htmlFor="i2"
-    },1500)
+function changeSlide2(){
+    imgS2.style.display="none"
+
+    imgS.classList.remove("opacity2")
+    void imgS.offsetWidth
+    imgS.classList.add("opacity2");
+
+     imgS.style.display="flex";
+     
 }
