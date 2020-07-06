@@ -1,0 +1,405 @@
+html, body{
+    background-color: rgb(0,0,0) !important;
+}
+.home{
+    /* #00000000 */
+    background: linear-gradient( rgba(0,0,0,0) 35%,rgba(0,0,0,0.98) 99%, rgb(0, 0, 0)), url(./japan.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 100% 0%;
+    background-size: 99vw 150vh;
+    height: 158vh;
+}
+
+
+.home .homeHr{
+    border:0.51px rgb(219, 218, 218) solid;
+    width: 80%;
+}
+
+/* NAV BAR  */
+
+    .navr{
+        display: flex;
+        padding: 4.9vh 1vw 0vh 1vw;
+        
+    }
+
+    .navr a{
+        color: white;
+        display: inline;
+        font-size: 1vw;
+    }
+
+
+
+
+
+    .navr .ico{
+        display: inline;
+        font-size: 2.3vw;
+        margin-top: -0.9vw;
+        margin-right: 1vw;
+        margin-left: 9.6vw;
+        color: rgb(194, 31, 31);
+    }
+    .navr .logo{
+        display: inline;
+    }
+
+    .navr .logo .visitJ{
+        display: inline;
+        font-size: 1.2vw;
+    }
+
+
+    
+    .navr .menu{
+        width: 191.333333%;
+        display: inline-block;
+    }
+
+    .navr .menu a{
+        margin-right: 2.4vw;
+        font-size: 0.95vw;
+        
+    }
+
+    .navr .lang{
+        width: 67%;
+        margin-left: -5vw;
+       
+    }
+    .navr .lang a{
+        font-size: 1.2vw;
+    }
+/* //////// */
+
+
+/* HEADING AND CAROUSEL*/
+
+.wrapper{
+    margin: 32.6vh 0vw 0vw -1vw;
+    display: grid;
+    grid-template-columns: 52.5vw 5vw 4vw;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "header header header header"
+        "main main . sidebar"
+        "footer footer footer footer";
+}
+
+
+.wrapper .heading{
+    grid-area: main;
+}
+
+.wrapper .heading p{
+    font-size: 23vw;
+    color: white;
+    line-height: 54%;
+    font-weight: 700;
+    transform: scale(0.5, 0.7);
+}
+
+.wrapper .heading .sm{
+    font-size: 3.5vw;
+    font-weight: 400;
+    margin: 5vh 1vw 0vw 0vw;
+    color: rgb(160, 160, 160);
+    line-height: 0%;
+    transform: scale(0.5, 0.5);
+}
+
+
+/* ///////////////////////////////////////////////////////////////////// */
+
+
+.wrapper .carousel{
+   grid-area:sidebar;
+   padding: 23vh 0vw 0vh 11vw;
+   display: block;
+}
+
+
+
+
+.wrapper .carousel .first{
+    font-size: 1.1vw;
+    color: grey;
+    display: inline-block;
+    width: 90%;
+    margin: 0vh 0vw 1.8vh 2vw;
+}
+.wrapper .carousel .first .firstHr{
+    width: 6%;
+    margin: -3.5vh 0vw 1vh 13.5vw;
+    border:0.51px rgb(128, 127, 127) solid;
+}
+
+
+
+/* ////// */
+/* //////// */
+.wrapper .carousel .second{
+    font-size: 1.5vw;
+    color: white;
+    display: inline-block;
+    width: 100%;
+    margin-top: 0vh;
+}
+.wrapper .carousel .second .secondHr{
+    width: 6%;
+    margin: -4.5vh 0vw 2.5vh 15.5vw;
+    border:0.51px rgb(219, 218, 218) solid;
+}
+
+
+/* ////// */
+.wrapper .carousel .third{
+    font-size: 1.1vw;
+    color: grey;
+    display: inline-block;
+    width: 90%;
+    margin:1.5vh 0vw 2vh 2vw;
+}
+.wrapper .carousel .third .thirdHr{
+    width: 6%;
+    margin: -3.5vh 0vw 1vh 13.5vw;
+    border:0.51px rgb(128, 127, 127) solid;
+}
+/* ////// */
+
+/* ///////////////////////////////////////////////////////////////////// */
+
+
+.info{
+    display: flex;
+    margin: 35vh 5vw 0vh 5vw;
+    color: white;
+    background-color: transparent;
+    /* border-bottom: 2px red solid; */
+}
+
+.innerInfo{
+    width: 33.333333%;
+    border-bottom: 0.5px gray solid;
+    color: rgb(90, 90, 90);
+    display: flex;
+    padding: 0vh 0vw 5.5vh 2vw;
+    transition: 0.4s all ease;
+}
+
+.innerInfo .fas{
+    width: 25%;
+    font-size: 2.2vw;
+}
+.innerInfo .far{
+    width: 25%;
+    font-size: 2.2vw;
+}
+.innerInfo .innerText{
+    width: 75%;
+    display: block;
+    cursor: pointer;
+    text-align: left;
+    font-size: 1vw;
+}
+
+.innerInfo .innerText a{
+    text-decoration: none ;
+    color: rgb(90, 90, 90);
+    font-weight: 600;
+    letter-spacing: -0.1vw;
+}
+
+
+.selected{
+   color: white;
+   border-bottom: 1.3px rgb(190, 61, 61) solid;
+}
+
+#item1 a{
+    color: white;
+}
+
+/*/////////////////////////////////////////////////////////*/
+.favorspot{
+    background-color: rgb(0,0,0);
+    margin-top:20vh;
+}
+
+.favorspot p{
+    margin: 0;
+}
+
+.favorspot{
+    text-align: center;
+}
+
+.favorspot .upTitle{
+    font-size: 1.3vw;
+    background: linear-gradient(to right, #000000 0%, #ffffff 100%);
+    color: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.favorspot .title{
+    font-size: 2.3vw;
+    color: white;
+    font-weight: 600;
+    letter-spacing: -0.15vw;
+}
+
+/*/////////////////////////////////////////////////////////*/
+.imgS{
+    display: none;
+    padding: 3vh 6vw 1vh 7vw;
+    transition: 0.5s slider ease;
+}
+
+.img1{
+    width: 25%;
+    height: 60vh;
+    margin: 8vh 0.5vw 0vh 0.5vw;
+    background: linear-gradient( rgba(0,0,0,0) 35%,rgba(0,0,0,0.98) 99%, rgb(0, 0, 0)) 33%, url(./sushi.jpg);
+    background-repeat: no-repeat;
+    background-attachment: cover;
+    background-position: 58% 8%;
+    background-size: 100% 100%;
+}
+
+.img1 .txt{
+    z-index: 0;
+    /* display: inline; */
+    position: relative;
+    color: white;
+    width: 100%;
+    text-align: center;
+    top: 77%;
+    left: 0;
+    margin: 0;
+    transition: 0.5s all ease;
+}
+.img1 p{
+    margin-bottom: 0.2vh;
+}
+.img1 .small{
+    font-size: 0.8vw;
+}
+
+.img1 .undertxt{
+    opacity: 0 !important;
+    position: relative;
+    color: white;
+    width: 100%;
+    text-align: center;
+    top: 77%;
+    text-align: center;
+    transition: 0.5s all ease;
+}
+
+
+.img2{
+    width: 25%;
+    height: 55vh;
+    background: linear-gradient( rgba(0,0,0,0) 35%,rgba(0,0,0,0.98) 99%, rgb(0, 0, 0)) 33%, url(./fuji.jpg);
+    background-repeat: no-repeat;
+    background-attachment: cover;
+    background-position: 58% 8%;
+    background-size: 100% 100%;
+}
+
+.img3{
+    width: 25%;
+    height: 55vh;
+    background: linear-gradient( rgba(0,0,0,0) 35%,rgba(0,0,0,0.98) 99%, rgb(0, 0, 0)) 33%, url(./kyoto.jpg);
+    background-repeat: no-repeat;
+    background-attachment: cover;
+    background-position: 58% 8%;
+    background-size: 100% 100%;
+}
+
+.img4{
+    width: 25%;
+    height: 55vh;
+    background: linear-gradient( rgba(0,0,0,0) 35%,rgba(0,0,0,0.98) 99%, rgb(0, 0, 0)) 33%, url(./temple.jpg);
+    background-repeat: no-repeat;
+    background-attachment: cover;
+    background-position: 58% 8%;
+    background-size: 100% 100%;
+}
+
+
+/* IMG S 2 */
+.imgS2{
+    display: none;
+    padding: 3vh 6vw 1vh 7vw;
+    /* transition: 0.5s slider ease; */
+}
+
+/* ////// */
+
+/* HOVER ON txt and undertxt */
+
+.img1:hover  .txt{
+    top:60%
+}
+
+.img1:hover .undertxt{
+    opacity: 1 !important;
+    /* display: block ; */
+    top: 65%;
+}
+
+/* ///////////////////////// */
+
+/* INPUT STUFF */
+input{
+   display: none;
+}
+
+#i1:checked~#one,
+#i2:checked~#two{
+    display: flex;
+}
+
+
+/* /////////////// */
+
+
+@keyframes slider{
+    from{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    to{
+        opacity: 0;
+        transform: translateX(-2000px);
+    }
+}
+
+@keyframes slider2{
+    from{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+        
+    }
+}
+
+@keyframes opacityS{
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+}
+
+.opacity{
+    animation: opacityS 0.8s ease;
+}
